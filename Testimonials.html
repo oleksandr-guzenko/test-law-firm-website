@@ -50,6 +50,7 @@
      <!-- Script -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <script src="https://www.youtube.com/iframe_api"></script>
      <script src="https://kit.fontawesome.com/2e0b5171b5.js" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
      <script src="./assets/js/slide.js"></script>
@@ -728,11 +729,13 @@
       testImonalsSplider();
 
       var selectedVideoId = null;
-        var selectedVideoPlaying = false;
-        var videoSelected = false;
-        const selectedVideo = document.getElementById('selected-video');
-        const selectedVideoSource = document.getElementById('selected-video-source');
-        const selectedVideoButton = $('#selected-video-btn');
+      var selectedVideoPlaying = false;
+      var videoSelected = false;
+      const selectedVideo = document.getElementById('selected-video');
+      const selectedVideoSource = document.getElementById('selected-video-source');
+      const selectedVideoButton = $('#selected-video-btn');
+
+      var player;
 
         $('#selected-video-container').on('mouseenter', function(e) {
             if(videoSelected) selectedVideoButton.css({display: 'inline-block'});
@@ -745,13 +748,19 @@
         function playVideo(id) {
             const video = document.getElementById(`video-${id}`);
 
-            console.log(video.src);
+            console.log(video.src.split('/').pop().split('?')[0]);
 
-            $(selectedVideo).html(`
-              <iframe width="420" height="315"
-              src="${video.src}">
-              </iframe>
-            `);
+            player = new YT.Player('selected-video', {
+              width: '100%',
+              videoId: video.src.split('/').pop().split('?')[0],
+              playerVars: {
+                'playsinline': 1
+              },
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
         }
 
         selectedVideoButton.on('click', function (e) {
