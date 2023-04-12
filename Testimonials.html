@@ -228,15 +228,10 @@
                       <ul class="splide__list">
                           <li class="splide__slide">
                             <div class="video-container">
-                              <img class="video" id="video-1" height="140" src="http://img.youtube.com/vi/myksGFmLB_s/0.jpg" data-videoId="myksGFmLB_s" />
-                                <div class="hover-video" id="hover-video-1">
-                                    <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100%; width: 100%;">
-                                        <div class="text-center">
-                                            <button class="video-button" onclick="playVideo('myksGFmLB_s')">
-                                                <span class="fas fa-play"></span>
-                                            </button>
-                                        </div>
-                                    </div>
+                              <iframe height="100%"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                              </iframe>
+                                <div class="hover-video">
                                 </div>
                             </div>
                           </li>
@@ -321,8 +316,6 @@
             </div>
             <div class="col-lg-6">
                 <div id="selected-video-container">
-                  <button id="selected-video-btn"></button>
-                  <img src="" alt="" style="position:absolute; top: 0; left: 0; z-index: 1; width: 100%; height: 100%;" id="selected-video-thumbnail">
                   <div id="selected-video"></div>
                 </div>
             </div>
@@ -728,22 +721,7 @@
       videoSplider();
       testImonalsSplider();
 
-      var selectedVideoId = null;
-      var selectedVideoPlaying = false;
-      var videoSelected = false;
-      const selectedVideo = document.getElementById('selected-video');
-      const selectedVideoSource = document.getElementById('selected-video-source');
-      const selectedVideoButton = $('#selected-video-btn');
-
       var player;
-
-        $('#selected-video-container').on('mouseenter', function(e) {
-            if(videoSelected) selectedVideoButton.css({display: 'inline-block'});
-        });
-
-        $('#selected-video-container').on('mouseleave', function(e) {
-            if(videoSelected) selectedVideoButton.css({display: 'none'});
-        });
 
         function playVideo(video_id) {
           document.getElementById('selected-video-thumbnail').src = `http://img.youtube.com/vi/${video_id}/0.jpg`;
@@ -780,11 +758,6 @@
         function stopVideo() {
           player.stopVideo();
         }
-
-        selectedVideoButton.on('click', function (e) {
-            if(selectedVideoPlaying) selectedVideo.pause();
-            else selectedVideo.play();
-        });
     </script>
 
   </body>
