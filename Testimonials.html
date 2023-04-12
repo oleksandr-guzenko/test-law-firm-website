@@ -228,11 +228,11 @@
                       <ul class="splide__list">
                           <li class="splide__slide">
                             <div class="video-container">
-                              <img class="video" id="video-1" height="140" src="http://img.youtube.com/vi/tgbNymZ7vqY/0.jpg" />
+                              <img class="video" id="video-1" height="140" src="http://img.youtube.com/vi/tgbNymZ7vqY/0.jpg" data-videoId="tgbNymZ7vqY" />
                                 <div class="hover-video" id="hover-video-1">
                                     <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100%; width: 100%;">
                                         <div class="text-center">
-                                            <button class="video-button" onclick="playVideo(1)">
+                                            <button class="video-button" onclick="playVideo('tgbNymZ7vqY')">
                                                 <span class="fas fa-play"></span>
                                             </button>
                                         </div>
@@ -744,20 +744,13 @@
             if(videoSelected) selectedVideoButton.css({display: 'none'});
         });
 
-        function playVideo(id) {
-            const video = document.getElementById(`video-${id}`);
-
-            console.log(video.src.split('/').pop().split('?')[0]);
-
+        function playVideo(video_id) {
             player = new YT.Player('selected-video', {
               width: '100%',
-              videoId: video.src.split('/').pop().split('?')[0],
+              videoId: video_id,
               playerVars: {
                 'playsinline': 1
               },
-              showinfo: 0,
-              autohide: 1,
-              controls: 0,
               events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
