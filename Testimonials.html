@@ -654,7 +654,10 @@
             playerVars: {
               'playsinline': 1
             },
-            autoplay: 0
+            autoplay: 0,
+            events: {
+              'onReady': document.getElementById('selected-video-container').style.background = 'none'
+            }
           });
         }
     </script>
