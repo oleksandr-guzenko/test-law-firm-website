@@ -772,21 +772,11 @@ footer .footer hr {
 }
 
 .video-slide .video-button {
-  background: #FE0000;
+  background: #none;
   height: 38px;
   width: 38px;
-  border: transparent;
-  border-radius: 9999px;
+  border: 1px solid green;
   position: relative;
-  box-shadow: 0 0 10px #FE0000, 0 0 20px #FE0000;
-}
-.video-slide .video-button span {
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  transform: translate(-50%, -50%);
 }
 .video-slide .splide__slide > div {
   position: relative;
