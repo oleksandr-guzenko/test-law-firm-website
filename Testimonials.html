@@ -227,7 +227,7 @@
                       <ul class="splide__list">
                           <li class="splide__slide">
                             <div class="video-container">
-                              <iframe class="video" id="video-1" height="140" src="https://youtu.be/myksGFmLB_s?controls=1">
+                              <iframe class="video" id="video-1" height="140" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
                               </iframe>
                                 <div class="hover-video" id="hover-video-1">
                                     <div class="d-flex justify-content-center align-items-center flex-column" style="height: 100%; width: 100%;">
@@ -322,9 +322,7 @@
             <div class="col-lg-6">
                 <div id="selected-video-container">
                     <button id="selected-video-btn"></button>
-                    <video id="selected-video" preload height="100%">
-                        <source id="selected-video-source" src="" type="video/mp4">
-                    </video>
+                    <div id="selected-video"></div>
                 </div>
             </div>
           </div>
@@ -747,35 +745,13 @@
         function playVideo(id) {
             const video = document.getElementById(`video-${id}`);
 
-            if(selectedVideoId) {
-                $(`#hover-video-${selectedVideoId}`).removeClass('active');
-                $(`#video-${selectedVideoId}`).removeClass('active');
-            }
+            console.log(video.src);
 
-            selectedVideoId = id;
-            videoSelected = true;
-            selectedVideoPlaying = false;
-            selectedVideoSource.src = video.src;
-            selectedVideo.load();
-            $('#selected-video-container').css({background: 'none'});
-            selectedVideoButton.html(`<span class="fas fa-play text-white"></span>`);
-            $(`#hover-video-${id}`).addClass('active');
-            $(`#video-${id}`).addClass('active');
-
-            selectedVideo.onplay = function (e) {
-                selectedVideoPlaying = true;
-                selectedVideoButton.html(`<span class="fas fa-pause text-white"></span>`);
-            }
-
-            selectedVideo.onended = function (e) {
-                selectedVideoPlaying = false;
-                selectedVideoButton.html(`<span class="fas fa-play text-white"></span>`);
-            }
-
-            selectedVideo.onpause = function (e) {
-                selectedVideoPlaying = false;
-                selectedVideoButton.html(`<span class="fas fa-play text-white"></span>`);
-            }
+            $(selectedVideo).html(`
+              <iframe width="420" height="315"
+              src="${video.src}">
+              </iframe>
+            `);
         }
 
         selectedVideoButton.on('click', function (e) {
