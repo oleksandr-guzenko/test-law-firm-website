@@ -723,7 +723,6 @@
       var player;
 
         function playVideo(video_id) {
-          document.getElementById('selected-video-thumbnail').src = `http://img.youtube.com/vi/${video_id}/0.jpg`;
           player = new YT.Player('selected-video', {
             width: '100%',
             videoId: video_id,
