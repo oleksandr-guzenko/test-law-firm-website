@@ -1,0 +1,212 @@
+[
+  {
+    "price": 5741910, 
+    "place": "Auto v. Truck", 
+    "pa": 1
+  }, 
+  {
+    "price": 5500000, 
+    "place": "Auto v. Truck", 
+    "pa": 1
+  }, 
+  {
+    "price": 3600000, 
+    "place": "Manley v. Rainer, Inc.", 
+    "pa": 3
+  }, 
+  {
+    "price": 1500000, 
+    "place": "Grigorian v. Goodyear", 
+    "pa": 1
+  }, 
+  {
+    "price": 1350000, 
+    "place": "Confidential v. Confidential.", 
+    "pa": 1
+  }, 
+  {
+    "price": 1250000, 
+    "place": "Sayed v. Bongo Inc.", 
+    "pa": 1
+  }, 
+  {
+    "price": 1100000, 
+    "place": "Garces v. Bernard", 
+    "pa": 4
+  }, 
+  {
+    "price": 990000      , 
+    "place": "Wise v. Ultimate Motorcycle Company, Inc.", 
+    "pa": 1
+  }, 
+  {
+    "price": 750000, 
+    "place": "Weber v. Roberts", 
+    "pa": 1
+  }, 
+  {
+    "price": 700000, 
+    "place": "Luna vs. Culbertson (passenger)", 
+    "pa": 1
+  }, 
+  {
+    "price": 602500, 
+    "place": "Hovakemian v. Pacific Motor Vehicle Transport", 
+    "pa": 2
+  }, 
+  {
+    "price": 585000, 
+    "place": "Krome v. Clark", 
+    "pa": 1
+  }, 
+  {
+    "price": 500000, 
+    "place": "Confidential v. Confidential", 
+    "pa": 1
+  }, 
+  {
+    "price": 490000, 
+    "place": "Stepanian v. Lincoln Maner Apartments and General Motors", 
+    "pa": 1
+  }, 
+  {
+    "price": 490000, 
+    "place": "Small v. Guelich", 
+    "pa": 1
+  }, 
+  {
+    "price": 425000, 
+    "place": "Farhad v. Dadbin, et at.", 
+    "pa": 3
+  }, 
+  {
+    "price": 400000, 
+    "place": "Wood vs. Flynn", 
+    "pa": 4
+  }, 
+  {
+    "price": 375000, 
+    "place": "Corona v. St. Paul Fire & Marine Insurance Co.", 
+    "pa": 1
+  }, 
+  {
+    "price": 375000, 
+    "place": "Gomez v. United States of America", 
+    "pa": 1
+  }, 
+  {
+    "price": 360000, 
+    "place": "Christensen v. LACMTA, et al.", 
+    "pa": 1
+  }, 
+  {
+    "price": 350000, 
+    "place": "Cornelius v. Firestone Tire and Service Center", 
+    "pa": 1
+  }, 
+  {
+    "price": 350000, 
+    "place": "Confidential v. Confidential.", 
+    "pa": 1
+  }, 
+  {
+    "price": 323000, 
+    "place": "Perez v. LA County Metropolitan Transportation", 
+    "pa": 1
+  }, 
+  {
+    "price": 290000, 
+    "place": "Galoyan v. Papazian", 
+    "pa": 3
+  }, 
+  {
+    "price": 275000, 
+    "place": "Confidential v. Confidential.", 
+    "pa": 2
+  }, 
+  {
+    "price": 275000, 
+    "place": "Ashcraft v. Creekside Senior Apartment Community", 
+    "pa": 4
+  }, 
+  {
+    "price": 275000, 
+    "place": "Velasquez v. Estate of Ramira Flores & Jutio Flores", 
+    "pa": 3
+  }, 
+  {
+    "price": 239000, 
+    "place": "Contreraz v. Prez", 
+    "pa": 2
+  },
+  {
+    "price": 225000, 
+    "place": "Confidential v. Confidential.", 
+    "pa": 1
+  }, 
+  {
+    "price": 225000, 
+    "place": "Farrugia v. Rocha, et al.", 
+    "pa": 1
+  }, 
+  {
+    "price": 219000, 
+    "place": "Rivera v. Cunningham, et al.", 
+    "pa": 1
+  }, 
+  {
+    "price": 200000, 
+    "place": "Sutaru v. Samuet", 
+    "pa": 4
+  }, 
+  {
+    "price": 190000, 
+    "place": "Sims v. The Still, Inc, et al.", 
+    "pa": 2
+  }, 
+  {
+    "price": 170000, 
+    "place": "Asatryan v. Kmart", 
+    "pa": 3
+  }, 
+  {
+    "price": 165000, 
+    "place": "Papoyan v. Tricor America Inc.", 
+    "pa": 1
+  }, 
+  {
+    "price": 161522, 
+    "place": "Godunko v. Larisa Beauty Salcon", 
+    "pa": 2
+  }, 
+  {
+    "price": 135000, 
+    "place": "Luna vs. Culbertson (driver)", 
+    "pa": 1
+  }, 
+  {
+    "price": 133891, 
+    "place": "Mendoza v. Miller", 
+    "pa": 1
+  },
+  {
+    "price": 127500, 
+    "place": "Badalyan v. Villa Ventana Homeowner's Association", 
+    "pa": 4
+  },  
+  {
+    "price": 116000, 
+    "place": "Kodzhoyan v. 99 Cents Stores", 
+    "pa": 2
+  }, 
+  {
+    "price": 61500, 
+    "place": "Galoyan v. Papazian", 
+    "pa": 1
+  }, 
+  {
+    "price": 185000,
+    "place": "YuYing Ying v. City of Monterey Park, Atlantic Plaza, Atlantic Medical Center, Vantage Asset Management, Ltd.",
+    "pa":2
+  }
+]

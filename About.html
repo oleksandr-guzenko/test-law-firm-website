@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Certificates CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <style>
+      a.cc-nsge {
+        opacity: 0;
+      }
+      .live-chat {
+        width: 56px;
+        height: 56px;
+        background: #F8E2C9;
+        border: none;
+        outline: none;
+        border-radius: 9999px;
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 10000000 !important;
+      }
+    </style>
+
+     <!-- Script -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+     <script src="https://kit.fontawesome.com/2e0b5171b5.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+
+  </head>
+  <body>
+    <header 
+    class="header whiteBack"
+    style="position: relative;" 
+    >
+    <div style="
+      background-color: white;
+    "
+    ></div>
+    <div style="
+    "
+    ></div>
+    <div class="container">
+        <div class="px-md-3 p-0">
+            <div class="d-xxl-flex justify-content-between align-items-center">
+                <div class="d-flex justify-content-between align-items-center" id="header-1">
+                    <div onclick="window.location.assign('index.html')">
+                      <img class="d-none d-sm-block" src="./assets/img/header/logowhite.png" alt="large logo">
+                      <img class="d-sm-none d-block" src="./assets/img/header/logowhite.png" width="50%" alt="large logo">
+                      <!-- <img class="d-sm-none d-block" src="./assets/img/logosm.png" alt="small logo"> -->
+                    </div>
+                    <div class="d-xxl-none">
+                        <div class="d-md-flex d-none align-items-center">
+                            <a href="Contact.html" class="nav-button me-3">Contact Us</a>
+                            <button style="
+                                width: 53px;
+                                height: 53px;
+                                background: #ffffff1a;
+                                border: none !important;
+                                outline: none !important;
+                            "
+                                id="mobile-btn-1"
+                            >
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.3333 6.55564H5.66667M24 1.66675H2M24 11.4445H2M20.3333 16.3334H5.66667" stroke="white" stroke-width="2.44444" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="align-items-center d-flex d-md-none">
+                            <a href="About.html" class="me-2">About Us</a>
+                            <button style="
+                                background: none !important;
+                                outline: none !important;
+                                border: none !important;
+                            "
+                                id="mobile-btn-2"
+                            >
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1H26" stroke="white" stroke-width="2"/>
+                                    <path d="M0 9H22" stroke="white" stroke-width="2"/>
+                                    <path d="M0 17H26" stroke="white" stroke-width="2"/>
+                                    </svg>
+                                    
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-xxl-block d-none p-xxl-0 pt-3" id="address-items">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex me-xl-4 m-0">
+                            <div class="d-flex align-items-center">
+                                <div class="address-mark d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/header/vectororange.png" alt="vector">
+                                </div>
+                                <div class="address">
+                                    <div class="d-lg-block d-none">550 North Brand Boulevard, Suite 1050</div>
+                                    <div>Glendale, CA<span class="d-none d-md-inline"> 91203</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex me-xl-4 m-0">
+                            <div class="d-flex align-items-center">
+                                <div class="address-mark d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/header/vectororange.png" alt="vector">
+                                </div>
+                                <div class="address">
+                                    <div class="d-lg-block d-none">11801 Pierce Street 2nd Floor</div>
+                                    <div>Riverside, CA<span class="d-none d-md-inline"> 92505</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="d-flex align-items-center">
+                                <div class="address-mark d-flex justify-content-center align-items-center">
+                                    <img src="./assets/img/header/vectororange.png" alt="vector">
+                                </div>
+                                <div class="address">
+                                    <div class="d-lg-block d-none">1805 West Avenue KLancaster,</div>
+                                    <div><span class="d-lg-none">KLancaster, </span>CA<span class="d-none d-md-inline"> 93534</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu-items" class="d-md-block d-none p-md-0 ps-3">
+                <div class="d-flex flex-row flex-xs-column justify-content-between d-md-none py-2">
+                    <div class="d-flex me-xl-4 m-0">
+                        <div class="d-flex align-items-center">
+                            <div class="address-mark d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/header/vectororange.png" alt="vector">
+                            </div>
+                            <div class="address">
+                                <div class="d-lg-block d-none">550 North Brand Boulevard, Suite 1050</div>
+                                <div>Glendale, CA<span class="d-none d-md-inline"> 91203</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex me-xl-4 m-0">
+                        <div class="d-flex align-items-center">
+                            <div class="address-mark d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/header/vectororange.png" alt="vector">
+                            </div>
+                            <div class="address">
+                                <div class="d-lg-block d-none">11801 Pierce Street 2nd Floor</div>
+                                <div>Riverside, CA<span class="d-none d-md-inline"> 92505</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="d-flex align-items-center">
+                            <div class="address-mark d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/header/vectororange.png" alt="vector">
+                            </div>
+                            <div class="address">
+                                <div class="d-lg-block d-none">1805 West Avenue KLancaster,</div>
+                                <div><span class="d-lg-none">KLancaster, </span>CA<span class="d-none d-md-inline"> 93534</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-md-center justify-content-xxl-end justify-content-between flex-md-row flex-column nav-header">
+                    <a href="index.html" class="py-2 p-md-0">Home</a>
+                    <span class="d-none d-md-inline"></span>
+                    <a href="Cases.html" class="py-2 p-md-0">Cases</a>
+                    <span class="d-none d-md-inline"></span>
+                    <a href="Certificates.html" class="py-2 p-md-0">Certificates</a>
+                    <span class="d-none d-md-inline"></span>
+                    <a href="Testimonials.html" class="py-2 p-md-0">Testimonials</a>
+                    <span class="d-none d-md-inline"></span>
+                    <a href="About.html" class="py-2 p-md-0 active">About Us</a>
+                    <a href="Contact.html" class="d-md-none py-2 p-md-0">Contact Us</a>
+                    <a href="Contact.html" class="d-xxl-inline d-none nav-button">Contact Us</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main -->
+    <main>
+      <div class="about-us">
+        <div class="pad">
+          <div class="container">
+            <div class="ourFirm">
+              <h2>About Our Firm</h2>
+              <p>The Law Offices of Maro Burunsuzyan, PLC, is a law firm with a mission: Helping injured people rebuild their lives. We work tirelessly to obtain compensation in cases involving car accidents, premises liability, medical malpractice, and assaults. From our offices in Glendale, Riverside and Lancaster, we represent clients throughout the greater Los Angeles area and Southern California.</p><br>
+              <p>In settlement negotiations and in the courtroom, we will be your strong advocate, working hard to obtain maximum compensation for you.</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="p-3 p-sm-4 item" id="i1">
+                  <div class="ellipse">
+                    <span class="icon">
+                      <img src="./assets/img/autoAccidents.png" />
+                    </span>
+                    <h2>No Recovery, No Fee</h2>
+                    <br>
+                  </div>
+                  <p>The Law Offices of Maro Burunsuzyan, PLC, accepts personal injury and wrongful death cases on contingency. You will owe an attorney fee only if we obtain compensation for you</p>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3 mb-lg-0">
+                <div class="p-3 p-sm-4 item" id="i2">
+                  <div class="ellipse">
+                    <span class="icon">
+                      <img src="./assets/img/aggressive.png" />
+                    </span>
+                    <h2>Aggressive Advocacy And Compassionate Counsel</h2>
+                  </div>
+                  <p>In court and in settlement negotiations, our law firm provides vigorous, results-oriented representation. We use the latest technology and visual graphics, such as medical illustrations, inconsistency boards, <span id="item2" style="display: none;">and accident reconstruction animations, to aid in the successful resolution of our clients’ cases. In addition, we frequently call upon the expertise of physicians, accident reconstruction experts, and professionals in other disciplines who can provide key insights and testimony at trial. As the legal process moves forward, we provide counsel and practical assistance to help injured people and their families deal with the many challenges they face. You can be assured that we will do everything we can to help you move forward in your life.</span></p>
+                  <div class="text-center"><a href="javascript:showMore();" id="showB" >Read More</a></div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="p-3 p-sm-4 item" id="i3">
+                  <div class="ellipse">
+                    <span class="icon">
+                      <img src="./assets/img/freeConsultation.png" />
+                    </span>
+                    <h2>Free Consultations</h2>
+                    <br>
+                  </div>
+                  <p>To schedule a free consultation about an accident or medical malpractice case in Southern California, call the Law Offices of Maro Burunsuzyan, PLC at (818) 507-5188 or complete our online inquiry form.</p>
+                </div>
+              </div>
+            </div>
+            <div class="building">
+              <img src="./assets/img/buildings.png" alt="Our Office" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+    <!-- Google Map -->
+    <section class="findMap">
+      <div>
+        <h3>Our Locations</h3>
+        <div class="location" onclick="findLocation(0)">
+          <img src="./assets/img/findLocation/North_Brand.png" alt="CA">
+          <div>
+            <p>550 North Brand Boulevard, Suite 1050 Glendale, CA 91203</p>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>818-507-5188</span>
+            </div>
+          </div>
+        </div>
+        <div class="location" onclick="findLocation(1)">
+          <img src="./assets/img/findLocation/Pierce_Street.png" alt="CA">
+          <div>
+            <p>11801 Pierce Street 2nd Floor
+              Riverside, CA 92505</p>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>951-234-510</span>
+            </div>
+          </div>
+        </div>
+        <div class="location" onclick="findLocation(2)">
+          <img src="./assets/img/findLocation/West_Avenue.png" alt="CA">
+          <div>
+            <p>1805 West Avenue KLancaster, CA 93534</p>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>661-237-0602</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <iframe id="showLocation" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.6927577616457!2d-118.25421550000002!3d34.154201799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c05317c00001%3A0x6dee710c3283683f!2s550%20N%20Brand%20Blvd%20Suite%201050%2C%20Glendale%2C%20CA%2091207%2C%20USA!5e0!3m2!1sen!2suk!4v1681078943171!5m2!1sen!2suk" width="100%" height="850px" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="d-flex flex-column justify-content-start align-items-center g-5">
+            <div class="logo">
+              <img src="./assets/img/logo.png" alt="Logo">
+            </div>
+            <div class="row addpho">
+              <div class="col-md-12 col-6 address">
+                <div class="container-lg fh">
+                  <div class="d-flex flex-md-row flex-column justify-content-between align-items-start fh">
+                    <a href="index.html">Home</a>
+                    <div class="vl d-md-block d-none"></div>
+                    <a href="Cases.html">Cases</a>
+                    <div class="vl d-md-block d-none"></div>
+                    <a href="Teamdetails.html">Team Members</a>
+                    <div class="vl d-md-block d-none"></div>
+                    <a href="Testimonials.html">Testimonials</a>
+                    <div class="vl d-md-block d-none"></div>
+                    <a href="About.html">About Us</a>
+                    <div class="vl d-md-block d-none"></div>
+                    <a href="Contact.html">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-6 phones">
+                <div class="container-md fh">  
+                  <div class="d-flex flex-md-row flex-column justify-content-around align-items-end fh">
+                    <div class="phone">
+                      <span class="phone-img d-md-block d-block">
+                        <img src="./assets/img/print.png" alt="">
+                      </span>
+                      <a href="tel:8185075199">818-507-5199</a>
+                    </div>
+                    <div class="phone">
+                      <span class="phone-img d-md-block d-block">
+                        <img src="./assets/img/print.png" alt="">
+                      </span>
+                      <a href="tel:8185075199">818-507-5199</a>
+                    </div>
+                    <div class="phone">
+                      <span class="phone-img d-md-block d-block">
+                        <img src="./assets/img/print.png" alt="">
+                      </span>
+                      <a href="tel:8185075199">818-507-5199</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="" />
+            <p class="copyright">Copyright © 2023<span class="d-sm-none d-block"><br /></span> Law Offices Of Maro Burunsuzyan.<span class="d-md-none d-block"><br /></span> All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Live Chat -->
+    <button class="live-chat">
+		<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M13 0C5.83213 0 0 5.83213 0 13V25.1875C0 25.636 0.364 26 0.8125 26H13C20.1679 26 26 20.1679 26 13C26 5.83213 20.1679 0 13 0ZM13.8125 16.25H7.3125C6.864 16.25 6.5 15.886 6.5 15.4375C6.5 14.989 6.864 14.625 7.3125 14.625H13.8125C14.261 14.625 14.625 14.989 14.625 15.4375C14.625 15.886 14.261 16.25 13.8125 16.25ZM18.6875 11.375H7.3125C6.864 11.375 6.5 11.011 6.5 10.5625C6.5 10.114 6.864 9.75 7.3125 9.75H18.6875C19.136 9.75 19.5 10.114 19.5 10.5625C19.5 11.011 19.136 11.375 18.6875 11.375Z" fill="#E38B29"/>
+		</svg>	
+	  </button>
+
+
+    <!-- Contact Us -->
+    <script>
+      function contactUs() {
+        window.location.assign(`./Contact.html`);
+      };
+      function showMore() {
+        if($('#showB').html() === 'Read More') {
+          $('#showB').html('Read Less')
+          $('#item2').css('display', 'inline-block');
+          $('.item').css('height', 'auto !important');
+          $('#i1').css('height', ' ');
+          $('#i3').css('height', ' ');
+        } else {
+          $('#showB').html('Read More')
+          $('#item2').css('display', 'none');
+          $('.item').css('height', '100%');
+        }
+      }
+    </script>
+
+    <!-- Google Map Script -->
+    <script>
+      const locations = [
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.6927577616457!2d-118.25421550000002!3d34.154201799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c05317c00001%3A0x6dee710c3283683f!2s550%20N%20Brand%20Blvd%20Suite%201050%2C%20Glendale%2C%20CA%2091207%2C%20USA!5e0!3m2!1sen!2suk!4v1681078943171!5m2!1sen!2suk',
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.536186500293!2d-117.49359389999998!3d33.9015972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb772d9b1d651%3A0x23563fbeae454efd!2s11801%20Pierce%20St%202nd%20fl%2C%20Riverside%2C%20CA%2092505%2C%20USA!5e0!3m2!1sen!2suk!4v1681078852004!5m2!1sen!2suk', 
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.169346040034!2d-118.16377779999999!3d34.6756752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c25b1ea3a244e9%3A0x5dbf2ebed83726b9!2s1805%20W%20Ave%20K%2C%20Lancaster%2C%20CA%2093534%2C%20USA!5e0!3m2!1sen!2suk!4v1681078973560!5m2!1sen!2suk'
+      ];
+      $('.location').eq(0).css({
+        'background': '#FFD8A9', 
+        'border-radius': '10px', 
+        'cursor': 'pointer'
+      });
+      function findLocation (val) {
+        $('#showLocation').attr("src", locations[val]);
+        $('.location').css({
+          'background': '#FFffff', 
+          'border-radius': '0', 
+        })
+        $('.location').eq(val).css({
+          'background': '#FFD8A9', 
+          'border-radius': '10px', 
+          'cursor': 'pointer'
+        })
+      }
+    </script>
+    <script src="./assets/js/global.js"></script>
+
+    <!-- Live Chat Script -->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="1e5aed36-3c28-4b6b-99d4-dd038f077cd1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script>
+      $('.live-chat').on('click', function(e) {
+        if($('.cc-nsge').length > 0) {
+          $('.cc-nsge')[0].click();
+        }
+      });
+    </script>
+  </body>
+</html>

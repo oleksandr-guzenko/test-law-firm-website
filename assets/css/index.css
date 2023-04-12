@@ -1,0 +1,339 @@
+.post {
+  padding-top: 124px;
+  padding-bottom: 93px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: -48px;
+  background-image: url("/assets/img/maskGroup.png");
+  background-size: cover;
+  mix-blend-mode: luminosity;
+}
+.post h2 {
+  vertical-align: middle;
+}
+@media (max-width: 1200px) {
+  .post h2 {
+    font-size: 64px !important;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .post h2 {
+    text-align: center;
+    font-size: 54px !important;
+  }
+}
+@media (max-width: 768px) {
+  .post {
+    padding-top: 124px !important;
+    padding-bottom: 21px !important;
+    margin-top: -48px !important;
+  }
+}
+@media (max-width: 576px) {
+  .post {
+    padding-top: 124px !important;
+    padding-bottom: 14px !important;
+    margin-top: -48px !important;
+  }
+  .post h2 {
+    font-size: 28px !important;
+  }
+}
+.post h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  color: #000B18 !important;
+}
+.post p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #262626;
+}
+
+.practical-areas {
+  padding-top: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #FFD8A9;
+}
+@media (min-width: 992px) {
+  .practical-areas .viewAllPractice {
+    width: 300px !important;
+  }
+}
+@media (max-width: 576px) {
+  .practical-areas {
+    padding-top: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .practical-areas {
+    padding-top: 48px;
+  }
+}
+.practical-areas .left .itemR {
+  margin-top: 60px;
+}
+.practical-areas .left .itemB {
+  margin-left: 18px;
+}
+.practical-areas .left .itemT {
+  margin-right: 18px;
+}
+@media (max-width: 992px) {
+  .practical-areas .left {
+    margin-bottom: 0 !important;
+  }
+}
+.practical-areas .left .practical-areas-item {
+  cursor: pointer;
+  padding: 36px 8px;
+  margin-bottom: 18px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.1s;
+  gap: 16px;
+  filter: drop-shadow(0px 10px 50px rgba(0, 0, 0, 0.1));
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+@media (max-width: 1400px) {
+  .practical-areas .left .practical-areas-item {
+    height: 232px;
+  }
+  .practical-areas .left .practical-areas-item p {
+    font-size: 23px !important;
+  }
+}
+.practical-areas .left .practical-areas-item:hover {
+  background: #FFD8A9;
+}
+.practical-areas .left .practical-areas-item .icon {
+  background-color: #E38B29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.practical-areas .left .practical-areas-item .description {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: center;
+  color: #000B18 !important;
+}
+.practical-areas .right > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  margin-top: 32px;
+}
+@media (max-width: 992px) {
+  .practical-areas .right > div {
+    margin-top: 0 !important;
+  }
+}
+.practical-areas .right h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  color: #000B18;
+}
+@media (max-width: 576px) {
+  .practical-areas .right h2 {
+    font-size: 54px !important;
+  }
+}
+.practical-areas .right p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #262626;
+}
+.practical-areas .right button {
+  margin-top: 24px;
+}
+
+.testimonials {
+  background: url("/assets/img/black-plain-concrete-textured.png");
+  z-index: -3;
+  padding-top: 94px;
+  padding-bottom: 144px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (max-width: 768px) {
+  .testimonials {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  .testimonials h2 {
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width: 576px) {
+  .testimonials {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  .testimonials h2 {
+    margin-bottom: 20px !important;
+  }
+}
+.testimonials h2 {
+  margin-bottom: 79px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.testimonials .videoImg {
+  margin-top: 36px;
+  position: relative;
+  z-index: 2;
+}
+.testimonials .videoImg iframe {
+  width: 100%;
+  display: inline-block;
+  z-index: 3;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.testimonials .videoImg::before {
+  position: absolute;
+  content: "";
+  border-width: 180px;
+  border-style: solid;
+  border-color: #E38B29 transparent transparent #E38B29;
+  left: -36px;
+  top: -36px;
+  z-index: -1;
+}
+@media (max-width: 1400px) {
+  .testimonials .videoImg::before {
+    border-width: 140px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonials .videoImg::before {
+    border-width: 110px !important;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials .videoImg::before {
+    border-width: 110px !important;
+  }
+}
+@media (max-width: 576px) {
+  .testimonials .videoImg::before {
+    border-width: 90px !important;
+    left: -24px !important;
+    top: -24px !important;
+  }
+}
+.testimonials .review {
+  border: 10px solid #6D6D6D;
+  border-radius: 10px;
+  padding: 72px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+@media (max-width: 1400px) {
+  .testimonials .review {
+    padding: 64px 18px;
+  }
+  .testimonials .review p {
+    font-size: 18px !important;
+  }
+  .testimonials .review button {
+    font-size: 18px !important;
+  }
+}
+@media (max-width: 1200px) {
+  .testimonials .review {
+    padding: 72px !important;
+  }
+  .testimonials .review p {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials .review {
+    padding: 64px 18px !important;
+  }
+  .testimonials .review p {
+    font-size: 18px !important;
+  }
+  .testimonials .review button {
+    font-size: 16px !important;
+  }
+}
+.testimonials .review p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.testimonials .review .des {
+  font-style: italic;
+  color: #DEDEDE;
+}
+.testimonials .review .checked {
+  color: #E38B29;
+}
+.testimonials .review .vec {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: url("/assets/img/black-plain-concrete-textured.png");
+  margin-bottom: 8px;
+}
+.testimonials .review .vec img {
+  width: 100%;
+}
+.testimonials .review button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #000B18;
+}
+@media (max-width: 576px) {
+  .testimonials .review button {
+    font-size: 13px !important;
+    padding: 11px 21px;
+  }
+}/*# sourceMappingURL=index.css.map */

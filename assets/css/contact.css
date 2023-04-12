@@ -1,0 +1,116 @@
+.form-control::-moz-placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #dedede;
+  opacity: 1;
+}
+
+.contact_us {
+  background-color: #010E1D;
+  padding-top: 33px;
+  padding-bottom: 53px;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  .contact_us {
+    padding-bottom: 23px;
+  }
+}
+.contact_us .container .left_picture {
+  margin-right: 64px;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contact_us .container .left_picture .background {
+  position: absolute;
+  right: 60px;
+  top: -33px;
+  height: calc(116px + 100%);
+  width: 215%;
+  background-color: #FFD8A9;
+}
+.contact_us .container .left_picture .photo {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.contact_us .container .left_picture .photo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.contact_us .container .right_part {
+  background-color: #010E1D;
+}
+.contact_us .container .right_part .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1400px) {
+  .contact_us .container .right_part .content h2 {
+    font-size: 45px !important;
+  }
+  .contact_us .container .right_part .content p {
+    margin-bottom: 0 !important;
+  }
+}
+.contact_us .container .right_part .content h2 {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-style: normal;
+}
+.contact_us .container .right_part .content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #DEDEDE;
+  font-style: normal;
+}
+@media (max-width: 576px) {
+  .contact_us .container .right_part .content p {
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 1400px) {
+  .contact_us .container .right_part .content input {
+    height: 36px !important;
+  }
+  .contact_us .container .right_part .content textarea {
+    height: 101px !important;
+  }
+}
+.contact_us .container .right_part .content input {
+  border-radius: 10px;
+  border: 1px solid #585858;
+  background-color: #010E1D;
+  font-size: 18px;
+  height: 72px;
+  color: #DEDEDE;
+  padding: 22px 33px;
+}
+.contact_us .container .right_part .content textarea {
+  border-radius: 10px;
+  border: 1px solid #585858;
+  background-color: #010E1D;
+  color: #DEDEDE;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: none;
+  height: 202px;
+  padding: 22px 33px;
+}
+.contact_us .container .right_part .content .text {
+  margin-top: 11px;
+  width: 100%;
+}
+.contact_us .container .right_part .content button {
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */
