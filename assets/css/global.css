@@ -771,13 +771,6 @@ footer .footer hr {
   }
 }
 
-.video-slide .video-button {
-  background: #none;
-  height: 38px;
-  width: 38px;
-  border: 1px solid green;
-  position: relative;
-}
 .video-slide .splide__slide > div {
   position: relative;
 }
