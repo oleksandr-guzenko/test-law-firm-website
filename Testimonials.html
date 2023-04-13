@@ -274,7 +274,9 @@
             </div>
             <div class="col-lg-6">
                 <div id="selected-video-container">
-                  <div id="selected-video"></div>
+                  <iframe height="100%" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+                    src="https://www.youtube.com/embed/EmPxp6eIGRo">
+                  </iframe>
                 </div>
             </div>
           </div>
@@ -683,17 +685,14 @@
 
         function playVideo(video_id) {
           console.log(video_id);
-          player = new YT.Player('selected-video', {
-            width: '100%',
-            videoId: video_id,
-            playerVars: {
-              'playsinline': 1
-            },
-            autoplay: 0,
-            events: {
-              'onReady': document.getElementById('selected-video-container').style.background = 'none'
-            }
-          });
+          
+          const iframe_html = `
+            <iframe height="100%" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+              src="https://www.youtube.com/embed/${video_id}">
+            </iframe>`
+          ;
+
+          document.getElementById('selected-video-container').html(iframe_html);
         }
     </script>
 
