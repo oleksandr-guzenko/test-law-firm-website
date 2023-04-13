@@ -251,13 +251,6 @@
   justify-content: center;
   align-items: center;
 }
-.test-imonials #selected-video-container {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  background: gray;
-}
 .test-imonials #selected-video-btn {
   display: none;
   background: #FE0000;
