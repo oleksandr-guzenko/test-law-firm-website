@@ -1263,6 +1263,12 @@ main .first-slider-container {
   }
 }
 
+.whiteBack #address-items {
+  background: rgba(255, 255, 255, 0.9);
+}
+.whiteBack #menu-items {
+  background: rgba(255, 255, 255, 0.9);
+}
 .whiteBack #mobile-btn-1 svg {
   color: black !important;
 }

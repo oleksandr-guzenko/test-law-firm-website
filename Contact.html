@@ -115,7 +115,7 @@
                       </div>
                   </div>
               </div>
-              <div class="d-xxl-block d-none p-xxl-0 pt-3" id="address-items">
+              <div class="d-xxl-block p-xxl-0 pt-3" id="address-items" style="display: none">
                   <div class="d-flex justify-content-between">
                       <div class="d-flex me-xl-4 m-0">
                           <div class="d-flex align-items-center">
@@ -153,16 +153,16 @@
                   </div>
               </div>
           </div>
-          <div id="menu-items" class="d-md-block d-none p-md-0 ps-3">
-              <div class="d-flex flex-row flex-xs-column justify-content-between d-md-none py-2">
+          <div id="menu-items" class="d-md-block p-md-0" style="display: none;">
+              <div class="d-flex flex-sm-row flex-column g-sm-0 flex-xs-column justify-content-between d-md-none py-2 addresses">
                   <div class="d-flex me-xl-4 m-0">
                       <div class="d-flex align-items-center">
                           <div class="address-mark d-flex justify-content-center align-items-center">
                               <img src="./assets/img/header/Vector.png" alt="vector">
                           </div>
                           <div class="address">
-                              <div class="d-lg-block d-none">550 North Brand Boulevard, Suite 1050</div>
-                              <div>Glendale, CA<span class="d-none d-md-inline"> 91203</span></div>
+                              <div class="d-lg-block d-sm-none d-block">550 North Brand Boulevard, Suite 1050</div>
+                              <div>Glendale, CA<span class="d-inline d-sm-none d-md-inline"> 91203</span></div>
                           </div>
                       </div>
                   </div>
@@ -172,8 +172,8 @@
                               <img src="./assets/img/header/Vector.png" alt="vector">
                           </div>
                           <div class="address">
-                              <div class="d-lg-block d-none">11801 Pierce Street 2nd Floor</div>
-                              <div>Riverside, CA<span class="d-none d-md-inline"> 92505</span></div>
+                              <div class="d-lg-block d-sm-none d-bloc">11801 Pierce Street 2nd Floor</div>
+                              <div>Riverside, CA<span class="d-inline d-sm-none d-md-inline"> 92505</span></div>
                           </div>
                       </div>
                   </div>
@@ -183,23 +183,23 @@
                               <img src="./assets/img/header/Vector.png" alt="vector">
                           </div>
                           <div class="address">
-                              <div class="d-lg-block d-none">1805 West Avenue KLancaster,</div>
-                              <div><span class="d-lg-none">KLancaster, </span>CA<span class="d-none d-md-inline"> 93534</span></div>
+                              <div class="d-lg-block d-sm-none d-bloc">1805 West Avenue KLancaster,</div>
+                              <div><span class="d-lg-none">KLancaster, </span>CA<span class="d-inline d-sm-none d-md-inline"> 93534</span></div>
                           </div>
                       </div>
                   </div>
               </div>
               <div class="d-flex align-items-md-center justify-content-xxl-end justify-content-between flex-md-row flex-column nav-header">
-                  <a href="index.html" class="py-2 p-md-0">Home</a>
+                  <a href="index.html" class="py-3 p-md-0 ">Home</a>
                   <span class="d-none d-md-inline"></span>
-                  <a href="Cases.html" class="py-2 p-md-0">Cases</a>
+                  <a href="Cases.html" class="py-3 p-md-0">Cases</a>
                   <span class="d-none d-md-inline"></span>
-                  <a href="Certificates.html" class="py-2 p-md-0">Certificates</a>
+                  <a href="Certificates.html" class="py-3 p-md-0">Certificates</a>
                   <span class="d-none d-md-inline"></span>
-                  <a href="Testimonials.html" class="py-2 p-md-0">Testimonials</a>
+                  <a href="Testimonials.html" class="py-3 p-md-0">Testimonials</a>
                   <span class="d-none d-md-inline"></span>
-                  <a href="About.html" class="py-2 p-md-0">About Us</a>
-                  <a href="Contact.html" class="d-md-none py-2 p-md-0 active">Contact Us</a>
+                  <a href="About.html" class="py-3 p-md-0">About Us</a>
+                  <a href="Contact.html" class="d-md-none py-3 p-md-0 active">Contact Us</a>
                   <a href="Contact.html" class="d-xxl-inline d-none nav-button">Contact Us</a>
               </div>
           </div>
@@ -383,6 +383,8 @@
 		</svg>	
 	</button>
 
+  <script>
+   </script>
     <script src="./assets/js/slide.js"></script>
     <!-- <script src="./assets/js/map-script.js"></script> -->
     <script>
@@ -435,5 +437,13 @@
         }, "T7Kf8bbMlg8A1LEAm");
       }
     </script>
+  <!-- <script>
+    $('#mobile-btn-2').click(() => {
+      $('#menu-items').slideToggle("2000")
+    })
+    $('#mobile-btn-1').click(() => {
+      $('#address-items').slideToggle("2000")
+    })
+   </script> -->
 </body>
 </html>
