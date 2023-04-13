@@ -1,5 +1,5 @@
 .about-us {
-  padding-top: 131px;
+  padding-top: 116px;
 }
 @media (max-width: 576px) {
   .about-us {
@@ -250,20 +250,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.test-imonials #selected-video-btn {
-  display: none;
-  background: #FE0000;
-  height: 38px;
-  width: 38px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  border: transparent;
-  border-radius: 9999px;
-  position: absolute;
-  box-shadow: 0 0 10px #FE0000, 0 0 20px #FE0000;
 }
 
 .case-results {
@@ -551,9 +537,14 @@
   padding-bottom: 172px;
   height: 100%;
 }
+@media (max-width: 992px) {
+  .certificates .books .book {
+    padding-bottom: 102px !important;
+  }
+}
 @media (max-width: 576px) {
   .certificates .books .book {
-    padding-bottom: 36px !important;
+    padding-bottom: 72px !important;
   }
 }
 .certificates .books .book-description {
@@ -635,11 +626,6 @@
   display: inline-block;
   filter: drop-shadow(0px 41.7284px 156.481px rgba(0, 0, 0, 0.2));
 }
-@media (max-width: 576px) {
-  .certificates .books .book-img {
-    padding-bottom: 0 !important;
-  }
-}
 @media (max-width: 1200px) {
   .certificates .books .book-img > img {
     width: 380px !important;
@@ -654,6 +640,15 @@
   }
   .certificates .books .book-img .gradient {
     width: 480px !important;
+    height: calc(100% - 102px) !important;
+  }
+}
+@media (max-width: 768px) {
+  .certificates .books .book-img > img {
+    width: 420px !important;
+  }
+  .certificates .books .book-img .gradient {
+    width: 420px !important;
   }
 }
 @media (max-width: 576px) {
@@ -662,6 +657,7 @@
   }
   .certificates .books .book-img .gradient {
     width: 280px !important;
+    height: calc(100% - 72px) !important;
   }
   .certificates .books .book-img::before {
     border-width: 90px !important;
@@ -870,6 +866,7 @@
   }
 }
 .member_details .member_right_text .awards .award {
+  padding: 10px;
   height: 100%;
   width: 100%;
   border: 1px solid #b9b9b9;

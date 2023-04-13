@@ -35,11 +35,16 @@
   .member_details {
     .member_left_picture {
       .attorney {
-        display: flex !important;
+        display: none !important;
       }
       .photo {
-        margin-left: 65px !important;
+        // margin-left: 65px !important;
+        // width: 90% !important;
+        // margin: auto;
       }
+    }
+    .member_right_text {
+      width: 100% !important;
     }
   }
   .contact_us {
@@ -59,10 +64,13 @@
     }
   }
   header {
-    h1 {
+    h1:not(#case) {
       font-size: 72px !important;
       padding-top: 96px !important;
       padding-bottom: 48px !important;
+    }
+    h1#case {
+      font-size: 72px;
     }
     .mouse {
       padding-top: 48px;
@@ -88,10 +96,13 @@
     }
   }
   header {
-    h1 {
+    h1:not(#case) {
       font-size: 64px !important;
       padding-top: 64px !important;
       padding-bottom: 36px !important;
+    }
+    h1#case {
+      font-size: 64px;
     }
   }
 }
@@ -141,10 +152,15 @@
     }
   }
   header {
-    h1 {
+    h1:not(#case) {
       font-size: 56px !important;
       padding-top: 36px !important;
       padding-bottom: 24px !important;
+    }
+    h1#case {
+      font-size: 56px !important;
+      padding-top: 90px !important;
+      padding-bottom: 90px !important;
     }
   }
 }
@@ -168,6 +184,11 @@
       img {
         width: 100% !important;
         object-fit: contain !important;
+      }
+    }
+    #menu-items {
+      .addresses {
+        gap: 15px;
       }
     }
   }
@@ -393,7 +414,7 @@
     color: $secondary-color !important;
   }
   a.nav-link {
-    color: white !important
+    color: white !important;
   }
   
   .nav-button {
@@ -480,7 +501,7 @@
 
       @media screen and (max-width: 1200px) {
           .header-landing-title {
-              font-size: 48px;
+              font-size: 61px;
           }
       }
 
@@ -936,7 +957,7 @@ footer {
       }
   }
 }
-.video-slide {
+
 
 .splide__slide {
     > div {
@@ -992,8 +1013,8 @@ footer {
   width: 140px;
   overflow: hidden;
   border-radius: 10px;
-  }
 }
+
 .testimonials-slide {
 
   .testimonial-item {
@@ -1416,8 +1437,62 @@ margin-bottom: 100px;
       }
   }
 
+  @media (max-width: 1400px) {
+    #address-items {
+      position: absolute;
+      z-index: 2;
+      background: #091625fa;
+      left: 0;
+      width: 100%;
+      backdrop-filter: blur(1px);
+      border: 1px solid;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 15px;
+      padding-left: calc(50vw - 542px);
+      padding-right: calc(50vw - 542px);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    #address-items {
+      padding-left: calc(50vw - 452px);
+      padding-right: calc(50vw - 452px);
+    }
+  }
+
+  @media (max-width: 992px) {
+    #address-items {
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+  }
+
   #menu-items {
       margin-top: 34px;
+
+      > div {
+        margin-bottom: 15px;
+      }
+  }
+
+  @media (max-width: 768px) {
+    #menu-items {
+      position: absolute;
+      z-index: 2;
+      background: #091625fa;
+      left: 0;
+      width: 100%;
+      backdrop-filter: blur(1px);
+      border: 1px solid;
+      padding: 25px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #menu-items {
+      padding: 32px;
+    }
   }
 }
 
@@ -1455,5 +1530,26 @@ margin-bottom: 100px;
   }
   button.navbar-toggler {
     color: $secondary-color;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  button {
+    // padding: 10px 21px !important;
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    // padding: 10px 21px !important;
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 576px) {
+  button {
+    font-size: 13px !important;
+    padding: 11px 21px;
   }
 }
